@@ -15,8 +15,12 @@ $.ajax({
       	for (var i = 0; i < 10; i++) {
       		var headline = docs[i].abstract;
       		var snippet = docs[i].snippet;
+
+          //var articleNum = $("<span>").text(i);
+          //console.log(articleNum);
       		//put headline and snippet into results div
-      		$(".news-headline").append(headline);
+      		$(".news-headline").append("<p>"+"<span>"+i+"</span>"+snippet+"</p>");
+
       	}
 
       	
