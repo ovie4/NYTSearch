@@ -16,6 +16,7 @@ $.ajax({
       		var headline = docs[i].abstract;
       		var snippet = docs[i].snippet;
       		//put headline and snippet into results div
+      		$(".news-headline").append(headline);
       	}
 
       	
