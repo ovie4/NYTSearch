@@ -16,6 +16,21 @@ $.ajax({
 
 
 //get api info for search term coming from input boxes
+//get values of the inputs
+//make new queryURL based on inputs
+//display json to the dom
+var search = "apple";
+var searchURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key="+apiKey+"&q=search";
+
+$.ajax({
+  url: searchURL,
+  method: 'GET'
+}).done(function(response){
+  console.log(searchURL);
+  // console.log(response);
+});
+
+
 
 
 
