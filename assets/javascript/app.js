@@ -1,18 +1,18 @@
 $(document).ready(function () {
 
   //get api info for top stories
-  // var apiKey = "cf2e5faa5f0b4dec846b014e6e89766b";
-  // var queryUrl = 'http://api.nytimes.com/svc/archive/v1/2016/11.json?api-key="+apiKey+';
+  var apiKey = "cf2e5faa5f0b4dec846b014e6e89766b";
+  var queryUrl = 'http://api.nytimes.com/svc/archive/v1/2016/11.json?api-key="+apiKey+';
 
-  // $.ajax({
-  //         url: queryURL,
-  //         method: "GET"
-  //       }).done(function(response) {
-  //       	//get headlines and small summary
-  //       	//get the div for the results box
-  //       	//populate the results box
+  $.ajax({
+          url: queryURL,
+          method: "GET"
+        }).done(function(response) {
+        	//get headlines and small summary
+        	//get the div for the results box
+        	//populate the results box
 
-  //       });
+        });
 
 
   //get api info for search term coming from input boxes
@@ -32,21 +32,6 @@ $(document).ready(function () {
     });
   });
 
-
-  // var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-  // url += '?' + $.param({
-  //   'api-key': "2d6d8bb60364453d8ab1e776b1a25537",
-  //   'q': "apple"
-  // });
-  // $.ajax({
-  //   url: url,
-  //   method: 'GET',
-  // }).done(function(result) {
-  //   console.log(url);
-  //   console.log(result);
-  // }).fail(function(err) {
-  //   throw err;
-  // });
 
 
 
