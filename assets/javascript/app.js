@@ -2,13 +2,24 @@ $(document).ready(function(){
 
 //get api info for top stories
 var apiKey = "cf2e5faa5f0b4dec846b014e6e89766b";
-var queryUrl = 'http://api.nytimes.com/svc/archive/v1/2016/11.json?api-key="+apiKey+';
+var queryUrl = 'http://api.nytimes.com/svc/archive/v1/2016/11.json?api-key='+apiKey;
 
 $.ajax({
-        url: queryURL,
+        url: queryUrl,
         method: "GET"
-      }).done(function(response) {
+      }).done(function(article) {
       	//get headlines and small summary
+      	console.log(article);
+      	var docs = article.response.docs;
+
+      	for (var i = 0; i < 10; i++) {
+      		var headline = docs[i].abstract;
+      		var snippet = docs[i].snippet;
+      		//put headline and snippet into results div
+      		$(".news-headline").append(headline);
+      	}
+
+      	
       	//get the div for the results box
       	//populate the results box
 
