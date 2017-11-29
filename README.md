@@ -7,7 +7,7 @@ This repo is a simple New York Times search app. We were able to make this websi
 
 ## Authors
 
-* **Andre' Jarboe II** - *Initial work* - [AndreJarboe](https://github.com/andrejarboe)
+* **Ovie** - *Initial work* - [Ovie4](https://github.com/ovie4)
 * **Andre' Jarboe II** - *Initial work* - [AndreJarboe](https://github.com/andrejarboe)
 * **Andre' Jarboe II** - *Initial work* - [AndreJarboe](https://github.com/andrejarboe)
 * **Andre' Jarboe II** - *Initial work* - [AndreJarboe](https://github.com/andrejarboe)
