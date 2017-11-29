@@ -11,8 +11,19 @@ $(document).ready(function () {
   //       	//get headlines and small summary
   //       	//get the div for the results box
   //       	//populate the results box
+   	for (var i = 0; i < 10; i++) {
+      		var headline = docs[i].abstract;
+      		var snippet = docs[i].snippet;
 
+          //var articleNum = $("<span>").text(i);
+          //console.log(articleNum);
+      		//put headline and snippet into results div
+      		$(".news-headline").append("<p>"+"<span>"+i+"</span>"+snippet+"</p>");
+
+      	}
+=======
   //       });
+
 
 
   //get api info for search term coming from input boxes
