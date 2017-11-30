@@ -21,7 +21,6 @@ $(document).ready(function () {
       		$(".news-headline").append("<p>"+"<span>"+i+"</span>"+snippet+"</p>");
 
       	}
-=======
   //       });
 
 
@@ -32,13 +31,14 @@ $(document).ready(function () {
   //display json to the dom
   $('#search-button').on('click', function () {
     var search = $('#search-text').val();
+    var recordLimit = 1;
     var searchURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=2d6d8bb60364453d8ab1e776b1a25537&q=" + search;
 
     $.ajax({
       url: searchURL,
       method: 'GET'
     }).done(function (response) {
-      // console.log(response);
+      console.log(response);
       for(var i=0; i <= response.response.docs.length; i++){
         console.log(response.response.docs[i].headline.main);
       }
