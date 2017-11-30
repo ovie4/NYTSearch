@@ -3,6 +3,8 @@ $(document).ready(function () {
   // //get api info for top stories
   // var apiKey = "cf2e5faa5f0b4dec846b014e6e89766b";
   // var queryUrl = 'http://api.nytimes.com/svc/archive/v1/2016/11.json?api-key="+apiKey+';
+  var search = $('#search-text').val();
+    var searchURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=2d6d8bb60364453d8ab1e776b1a25537&q=" + search;
 
   // $.ajax({
   //         url: queryURL,
@@ -21,7 +23,7 @@ $(document).ready(function () {
       		$(".news-headline").append("<p>"+"<span>"+i+"</span>"+snippet+"</p>");
 
       	}
-=======
+
   //       });
 
 
