@@ -8,58 +8,48 @@
 </head>
 
 <body>
-<<<<<<< HEAD
     <div class="container">
         <header>
         </header>
         <section id="search-box">
-
-<header class="head"><h1>New York Times Search</h1>
-</header>
-
-<div class="container">
- <section id="search-box">
-
-            <form>
-                <label>Search term</label>
-                <input type="text" id="search-text" name="search_term" />
-                <label>Number of articles to return</label>
-                <input type="text" id="record-number" name="article_limit" />
-                <label>Year to begin search</label>
-                <input type="text" id="begin-year" name="start_year" />
-                <label>Year to end search</label>
-                <input type="text" id="end-year" name="end_year" />
-                <button type="button" id="search-button">Search</button>
-                <button type="button" id="clear-button">Clear Results</button>
-            </form>
-
+            <header class="head">
+                <h1>New York Times Search</h1>
+            </header>
+            <div class="container">
+                <section id="search-box">
+                    <form>
+                        <label>Search term</label>
+                        <input type="text" id="search-text" name="search_term" placeholder="Search term..." />
+                        <label>Number of articles to return</label>
+                        <select id="record-number" name="article_limit">
+                            <option value="1">1</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                        </select>
+                        <label>Year to begin search</label>
+                        <input type="text" id="begin-year" name="start_year" placeholder="Begin search year..." />
+                        <label>Year to end search</label>
+                        <input type="text" id="end-year" name="end_year" placeholder="End search year..." />
+                        <button type="button" id="search-button">Search</button>
+                        <button type="button" id="clear-button">Clear Results</button>
+                    </form>
+                </section>
+                <section id="display-box">
+                </section>
+            </div>
         </section>
         <section id="display-box">
+            <table>
+                <thead>Top Articles</thead>
+                <tbody>
+                    <tr class="news-headline">article 1</tr>
+                    <tr class="news-abstract">article 1</tr>
+                </tbody>
+            </table>
         </section>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./assets/javascript/app.js"></script>
     </div>
-
-</section>
-  
-<section id="display-box">
-	<table>
-		<thead>Top Articles</thead>
-		<tbody>
-			<tr class="news-headline">article 1</tr>
-			<tr class="news-abstract">article 1</tr>
-		</tbody>
-	</table>
-</section>
-
-
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  
-<script type="text/javascript" src="./assets/javascript/app.js"></script>
-  
-</div>
-
 </body>
 
 </html>
