@@ -32,6 +32,7 @@ $.ajax({
   //make new queryURL based on inputs
   //display json to the dom
   $('#search-button').on('click', function () {
+    $(".news-headline").empty();
     var search = $('#search-text').val();
     var searchURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=2d6d8bb60364453d8ab1e776b1a25537&q=" + search;
 
@@ -40,8 +41,9 @@ $.ajax({
       method: 'GET'
     }).done(function (response) {
       // console.log(response);
-      for(var i=0; i <= response.response.docs.length; i++){
-        console.log(response.response.docs[i].headline.main);
+      for(var i=0; i < 11; i++){
+        var newHeadline= response.response.docs[i].headline.main;
+        $(".news-headline").append("<p>"+"<span>"+i+"</span>"+newHeadline+"</p>")
       }
       
       // console.log(response.response.docs[0].headline.main);
