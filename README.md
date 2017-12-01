@@ -1,9 +1,9 @@
 # NYTSearch
 Built with HTML, CSS, and jQuery
 
-To view it live, **[click here]()**.
+To view it live, **[click here](https://ovie4.github.io/NYTsearch/)**.
 
-This repo is a simple New York Times search app. The app takes a users in puts and displays the search results from the New York Times. We were able to make this website after four weeks of training at the Georgia Tech Coding Bootcamp. 
+This repo is a simple New York Times search app. The app takes users inputs and displays the search results from the New York Times. We were able to make this website after four weeks of training at the Georgia Tech Coding Bootcamp.
 
 ## Authors
 
